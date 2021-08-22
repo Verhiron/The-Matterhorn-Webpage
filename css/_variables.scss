@@ -1,0 +1,50 @@
+$background-color: #f8f8ff;
+$primary-color: #0f152b;
+$secondary-color: #ffae42;
+$white: #fff;
+
+@mixin container {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 1px;
+
+    @media only screen and (max-width: 767px){
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0 0 10px 0;
+    }
+}
+
+
+@mixin column {
+    width: 50%;
+    img{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@mixin button($color) {
+    border: 2px solid $secondary-color;
+    color: $color;
+    padding: 10px 25px;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $secondary-color;
+        color: #000;
+        border-color: #000;
+    }
+
+    &:active{
+        transform: translateY(1px);
+    }
+}
