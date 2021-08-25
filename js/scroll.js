@@ -18,7 +18,7 @@ $(document).ready(function() {
             // animates the scroll down to body
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
-             }, 1500);
+             }, 2700);
         } else {
             console.log("error");
         }
