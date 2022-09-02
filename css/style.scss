@@ -69,7 +69,6 @@ h4 {
 }
 
 nav{
-    position: fixed;
     background-color: transparent;
     margin: auto;
     height: 3.75em;
@@ -185,7 +184,6 @@ nav{
         border: 0;
         border: 2px solid $primary-color;
         width: 40%;
-        font-size: 1em;
         font-weight: 600;
 
         &:focus{
@@ -239,6 +237,7 @@ nav{
 
     p{
         margin: 20px 10px;
+        padding: 20px;
    }
 
 }

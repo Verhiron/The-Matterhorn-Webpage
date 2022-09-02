@@ -1,6 +1,6 @@
 $background-color: #f8f8ff;
 $primary-color: #0f152b;
-$secondary-color: #ffae42;
+$secondary-color: #e9aa1c;
 $white: #fff;
 
 @mixin container {
@@ -34,8 +34,9 @@ $white: #fff;
 
 @mixin button($color) {
     border: 2px solid $secondary-color;
+    border-radius: 3px;
     color: $color;
-    padding: 10px 25px;
+    padding: 8px 25px;
     text-decoration: none;
 
     &:hover{
